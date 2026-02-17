@@ -112,7 +112,7 @@
     <!-- end food maker -->
 
     <!-- start best food menu -->
-    <section class="w-full bg-black md:py-37">
+    <section class="w-full bg-black md:py-25">
         <div class="container mx-auto px-4 flex flex-col items-center">
             <h2 class="text-center text-white font-semibold text-3xl md:text-5xl">Our Best & Delicious Menu</h2>
             <ul
@@ -252,7 +252,7 @@
     <!-- end best food menu -->
 
     <!-- start stats section -->
-    <section class="w-full bg-black py-10 md:py-37">
+    <section class="w-full bg-black py-8 md:py-25">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-white text-center font-semibold text-2xl md:text-4xl">We believe in making quality food</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-15">
@@ -280,7 +280,7 @@
     <!-- end stats section -->
 
     <!-- start adventure section -->
-    <section class="w-full bg-black py-10 md:py-37.5">
+    <section class="w-full bg-black py-8 md:py-15">
         <div class="container mx-auto px-4 flex flex-col justify-center items-center text-white">
             <h2 class="text-3xl leading-12 lg:leading-17.5 md:text-4xl font-semibold md:w-1/2 text-center mb-5">Start
                 The
@@ -514,7 +514,7 @@
         <div class="container mx-auto px-4 flex flex-col justify-center items-center gap-5">
             <h2 class="text-3xl md:text-7xl font-bold md:leading-22.5">For more Support</h2>
             <div class="flex flex-col md:flex-row md:justify-center items-center gap-3">
-                <input class="border rounded-full border-gray-300 px-10 py-3 text-black" type="text"
+                <input class="border rounded-full border-gray-300 px-10 py-3 text-black" type="email"
                     placeholder="Enter Email">
                 <button class="btnTwo">Subcribe</button>
             </div>
@@ -536,9 +536,12 @@
                     </p>
                     <button class="btn">Find The Nearest Cheffest</button>
                 </div>
-                <div class="md:w-1/2">
-                    <img class="object-cover rounded-sm" src="assets/map.png" alt="Google map">
-                </div>
+
+                <iframe class="md:w-1/2 h-90 rounded-sm"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14472.595046124396!2d89.9375773626092!3d24.92700165506852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fd7f432d79ab59%3A0xba4e9a6ed6f6682c!2sJamalpur!5e0!3m2!1sen!2sbd!4v1771352174183!5m2!1sen!2sbd"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             </div>
         </div>
     </section>
@@ -551,47 +554,56 @@
                 <div class="space-y-3 text-white">
                     <h3 class="text-2xl">Our Products</h3>
                     <ul class="space-y-2">
-                        <li><a href="#">Our menus</a></li>
-                        <li><a href="#">Our burgers</a></li>
-                        <li><a href="#">Our times sides</a></li>
-                        <li><a href="#">Our naandwiches</a></li>
+                        <li><a class="hover:underline" href="#">Our menus</a></li>
+                        <li><a class="hover:underline" href="#">Our burgers</a></li>
+                        <li><a class="hover:underline" href="#">Our times sides</a></li>
+                        <li><a class="hover:underline" href="#">Our naandwiches</a></li>
                     </ul>
                 </div>
                 <div class="space-y-3 text-white">
                     <h3 class="text-2xl">legal information</h3>
                     <ul class="space-y-2">
-                        <li><a href="#">Legal Notice</a></li>
+                        <li><a class="hover:underline" href="#">Legal Notice</a></li>
 
                     </ul>
                 </div>
                 <div class="space-y-3 text-white">
                     <h3 class="text-2xl">Contact us</h3>
                     <ul class=" space-y-2">
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Our burgers</a></li>
-                        <li><a href="#">Our addresses</a></li>
-                        <li><a href="#">Become a Times Square franchisee</a></li>
+                        <li><a class="hover:underline" href="#">Contacts</a></li>
+                        <li><a class="hover:underline" href="#">Our burgers</a></li>
+                        <li><a class="hover:underline" href="#">Our addresses</a></li>
+                        <li><a class="hover:underline" href="#">Become a Times Square franchisee</a></li>
                     </ul>
                 </div>
                 <div class="space-y-3 text-white">
                     <h3 class="text-2xl">We accept</h3>
                     <div class="space-y-4">
                         <div class="flex gap-4">
-                            <img src="assets/Mastercard.png" alt="">
-                            <img src="assets/Visa.png" alt="visa">
+                            <img class="cursor-pointer" src="assets/Mastercard.png" alt="">
+                            <img class="cursor-pointer" src="assets/Visa.png" alt="visa">
                         </div>
-                        <img src="assets/express_img.png" alt="">
+                        <img class="cursor-pointer" src="assets/express_img.png" alt="">
                     </div>
                 </div>
             </div>
             <hr class="text-gray-600">
-            <div class="flex flex-wrap justify-between gap-5 mt-4">
-                <div class="flex text-white">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
+            <div class="flex flex-wrap justify-between items-center gap-5 mt-8 md:mt-10">
+                <div class="flex gap-4">
+                    <a class="flex justify-center items-center bg-white py-4 px-3 rounded-full" href="#">
+                        <i
+                            class="fa-brands fa-facebook-f hover:text-blue-500 text-2xl hover:rotate-360 duration-200 ease-linear"></i>
+                    </a>
+                    <a class="flex justify-center items-center bg-white py-4 px-3 rounded-full" href="#">
+                        <i
+                            class="fa-brands fa-twitter hover:text-blue-500 text-2xl hover:rotate-360 duration-200 ease-linear"></i>
+                    </a>
+                    <a class="flex justify-center items-center bg-white py-4 px-3 rounded-full" href="#">
+                        <i
+                            class="fa-brands fa-linkedin-in hover:text-blue-500 text-2xl hover:rotate-360 duration-200 ease-linear"></i>
+                    </a>
                 </div>
-                <p class="text-white">© 2024 Nayef All rights reserved.</p>
+                <p class="text-white">&copy; 2026 Nayef All rights reserved.</p>
             </div>
         </div>
     </section>
