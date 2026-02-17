@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+}
+@layer utilities{
+  .btn{
+    @apply bg-white rounded-full text-black w-full max-w-full md:max-w-fit px-12.5 py-5 cursor-pointer text-base md:text-xl font-semibold;
+  }
+  .btnTwo{
+    @apply bg-black rounded-full text-white w-full max-w-full md:max-w-fit px-10 py-3 cursor-pointer text-base md:text-xl font-semibold;
+  }
+}
+.pulse {
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  animation: animate-pulse 3s linear infinite;
+  cursor: pointer;
+}
+@keyframes animate-pulse {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(255, 255, 255, 0.7),
+      0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  40% {
+    box-shadow:
+      0 0 0 50px rgba(255, 109, 74, 0),
+      0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  80% {
+    box-shadow:
+      0 0 0 50px rgba(255, 109, 74, 0),
+      0 0 0 30px rgba(255, 109, 74, 0);
+  }
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(255, 109, 74, 0),
+      0 0 0 30px rgba(255, 109, 74, 0);
+  }
+}
